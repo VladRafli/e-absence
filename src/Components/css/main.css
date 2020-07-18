@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root {
+    /* Window Size */
+    --window-height: 100vh;
+    --window-width: 100vw;
+    /* Login Page Color */
+    --login-primary-color: #f5f5f5;
+    --login-text-color: #707070;
+    --login-button-color: #3B83E3;
+    --login-box-shadow: rgba(0, 0, 0, 0.2);
+    --login-layer-color: rgba(53, 53, 53, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Fira Code', monospace;
+}
