@@ -104,13 +104,25 @@
 
 /* The transition thing didn't work for now */
 
-.container .form form input:focus + label span, .container .form form input:invalid + label span, .container .form form input:valid + label span{
+.container .form form input:focus + label span, .container .form form input:not(:placeholder-shown) + label span {
     transform: translateY(-120%);
     font-size: 16px;
 }
 
 .container .link {
     flex: 20%;
+}
+
+.container .link a {
+    text-decoration: none;
+    color: blue;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.container .link a:hover {
+    text-decoration: underline;
+    color: gray;
 }
 
 .container .link p {
@@ -121,7 +133,6 @@
     flex: 10%;
 }
 
-
 .container .button {
     flex: 20%;
     align-self: flex-end;
@@ -131,9 +142,15 @@
 
 .container .button button {
     color: white;
-    background-color: royalblue;
+    background-color: var(--login-button-color);
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.container .button button:hover {
+    background-color: var(--login-button-hover-color);
 }

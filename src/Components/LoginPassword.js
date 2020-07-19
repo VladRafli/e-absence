@@ -18,7 +18,7 @@ function LoginPassword(props) {
                     </div>
                     <div className="form">
                         <form>
-                            <input type="password" name="password" id="password" autoComplete="off"/>
+                            <input type="password" name="password" id="password" autoComplete="off" placeholder=" " />
                             <label htmlFor="password">
                                 <span>Password</span>
                             </label>

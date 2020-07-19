@@ -12,7 +12,7 @@ function LoginEmail(props) {
                     </div>
                     <div className="form">
                         <form>
-                            <input type="email" name="email" id="email" autoComplete="off" />
+                            <input type="email" name="email" id="email" autoComplete="off" placeholder=" "/>
                             <label htmlFor="email">
                                 <span>Email</span>
                             </label>
